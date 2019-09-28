@@ -15,47 +15,6 @@ int var = 10;
 
 int main(int argc, char const *argv[])
 {
-
-#if 0
-    printf("a");
-    pid_t pid = 0;
-    int i = 0;
-    for( i = 0; i < 2; i++)
-    {
-        pid = fork();
-        if (pid == -1) {
-            return 0;
-        }else if (pid == 0)
-        {
-            break;
-        }
-    }
-    
-    if(i == 0)
-    {	
-		while(1){
-        printf("A");
-		sleep(3);
-		}
-    }
-    else if (i == 1)
-    {
-		sleep(1);
-		while(1){
-        printf("B");
-        sleep(3);
-        }
-    }
-    else if(i == 2)
-    {
-		sleep(2);
-		while(1){
-        printf("C");
-        sleep(3);
-		}
-    }
-#endif
-
 #if 0
 
     pid_t pid;
